@@ -1,4 +1,4 @@
-import {Component, Input, ViewChild} from '@angular/core';
+import {Component} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
 import {HomePage} from "../home/home";
 import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
