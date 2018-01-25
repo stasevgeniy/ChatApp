@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Chat
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button (click)="Exit()"  ion-button color="light" icon-start>
+    <ion-icon name='arrow-back'></ion-icon>
+    Exit
+  </button>
+
+  <ion-list>
+    <button ion-item *ngFor="let item of items | async">
+      {{item.name}} : {{item.message}}
+    </button>
+  </ion-list>
+
+  <ion-input #inputMess type="text" placeholder="Your message.."></ion-input>
+  <button (click)="newMessage(inputMess)" ion-button full>Send message</button>
+
+</ion-content>
